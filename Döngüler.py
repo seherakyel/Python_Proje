@@ -70,12 +70,12 @@ while x+y<1000:
    y +=2 # y=y+2
 
 
-# i=1
-# while True:
-#     print(i)
-#     i +=1 # i=i+1
-#     if i==1000:
-#         break
+ #i=1
+ #while True:
+ #   print(i)
+ #     i +=1 # i=i+1
+  #   if i==1000:
+  #       break
 
 
 i=1
