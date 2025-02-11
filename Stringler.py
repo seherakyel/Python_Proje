@@ -1,18 +1,18 @@
 # print("merhaba dünya")
 # print('merhaba dünya')
-# print("Fero\'nun Evi")
+# print("Fero\'nun Evi") 
 # print("""seherim
 # ben""")
-# print("selam\nbaba")
-# print("günaydın \t\t\tdostlarım")
+# print("selam\nbaba") # 1.satır selam,2.satır baba olacak 
+# print("günaydın \t\t\tdostlarım") # boşluk bırakıyor
 
 
-# mesaj1="SeHer"
-# mesaj2="annem"
-# mesaj3="Merhaba"
-# mesaj4="televizyon"
-# print(mesaj1)
-# print(mesaj1+" "+mesaj2)
+#  mesaj1="SeHer"
+#  mesaj2="annem"
+#  mesaj3="Merhaba"
+#  mesaj4="televizyon"
+#  print(mesaj1)
+#  print(mesaj1+" "+mesaj2)
 
 
 # print(mesaj1[0]) # 0=S,1=e,2=H,3=e,4=r
@@ -36,7 +36,7 @@
 
 
 # print(len(mesaj1 + mesaj4)) # kelimedeki harf sayısını gösteriyor
-# print("bırakmamak"*10) 
+# print("bırakmamak"*10) # bırakmamak kelimesi 10 kez tekrar edilir
 
 
 # isim1="Şilan"
@@ -51,8 +51,6 @@ sayi=123
 sayi2=str(sayi)
 print(sayi)
 print(sayi2)
-
-
 
 
 

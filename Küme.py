@@ -1,17 +1,17 @@
 #TUPLES(DEMET)
 demet=("sari","mavi","yesil","kirmizi","siyah")
 print(demet)
-print(len(demet))
-print(demet[2])
+print(len(demet)) # eleman sayısını soruyor ve 5 tane eleman var 
+print(demet[2]) # 0=sari,1=mavi,2=yesil,3=kirmizi,4=siyah
 print(demet[0])
 
 
 
-#SET(KÜME)
+#SET{KÜME}
 kume={"sari","mavi","yesil","kirmizi","siyah","gri"}
 print(kume)
 print(len(kume))
-#print(kume[3]) > bunu bu şekilde yazamayız kümelerde indeksleme yoktur çünkü kümeler sıralı değildir
+# print(kume[3]) >>> bunu bu şekilde yazamayız kümelerde indeksleme yoktur çünkü kümeler sıralı değildir
 kume.add("pembe") # rengi kümeye rastgele ekler
 print(kume)
 kume.remove("sari") # sariyi kümeden çıkarır 
@@ -30,7 +30,7 @@ print(kume2.difference(kume1)) # kume2 de olup kume1 de olmayan
 print(1 in kume1) # kume1 de 1 elemanı var mı varsa true yoksa false
 print(8 in kume2.union(kume1)) # kume1 ve kume2 nin birleşiminde 8 var mı varsa true yoksa false
 
-python=set("PYTHON")
+python=set("PYTHON") # küme şeklinde elemanlarına ayırır 
 print(python)
 
 ###NOT
@@ -41,7 +41,7 @@ bosDemet1=()
 bosDemet2=tuple()
 
 bosKume1=set()
-bosKume2={} # bu bos kume ifade etmez bi sözlüktür daha sonra işlenecek
+bosKume2={} # bu bos kume ifade etmez bu bir sözlüktür daha sonra işlenecek
 
 
 

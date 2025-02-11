@@ -37,7 +37,7 @@ else:
 v=50
 q=8
 d=10
-if v<q and q<d : # and=ve kosullardan herhangi biri değeri yanlış olduğunda (v<q and q<d) false tanımını alı
+if v<q and q<d : # and=ve kosullardan herhangi biri değeri yanlış olduğunda (v<q and q<d) false tanımını alır
     print("kosul dogru")
 else:
     print("kosul yanlis")
