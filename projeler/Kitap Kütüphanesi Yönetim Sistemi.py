@@ -1,6 +1,6 @@
 
 
-book1={"1""name":"1984","total":5,"category":"political"}
+book1={"name":"1984","total":5,"category":"political"}
 book2={"name":"Fareler ve Insanlar","total":2,"category":"tragedy"}
 book3={"name":"Seker Portakali","total":0,"category":"fiction"}
 
@@ -29,13 +29,15 @@ while True:
             print("guncel kitap listesi :", books)
 
     elif vote=="2":
-        book_name2=input("cikarmak istedgin kitap : ")
-        if book_name2 in books:
-            books[book_name2]["total"]-=1
-        else:
-            category=input("kitabin kategorisini girin :")
-            total=input("kitap adedini girin :")
+        book_name2=input("cikarmak istedigin kitap adini girin : ")
+        book_total=int(input("cikarmak istedigin kitap adedi girin : "))
+        category=input("kitabin kategorisini girin :")
+        if book_name2 in books and total>book_total:
+            books[book_name2]["total"]-=book_total 
+            print("guncel kitap listesi :", books)
 
+        else:
+            print("cikarmak istedigin kitap zaten yok ")
 
 
         
