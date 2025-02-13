@@ -9,14 +9,40 @@ books = {
     "book2": book2,
     "book3": book3
 }
-swi
+
 while True:
-    add_book=input("eklemek istedigin kitap")
-    if add_book in books:
-        print(f"{add_book} kitap zaten var")
-    else:
-        book_name=input("kitabin ismini girin")
-        book_total=input("kitabin adetini girin")
-        book_category=input("kitabin kategorisini girin")
-        add_book={"name":book_name,"total":book_total,"category":book_category}
+    print("1:kitap ekle veya arttir")
+    print("2:kitap cikar veya azalt")
+    print("3:kitaplari listele")
+    print("4:kitap ara")
+
+    vote=input("secim yapin : ")
+
+    if vote=="1":
+        book_name1=input("eklemek istediginiz kitabin adini girin :")
+        if book_name1 in books:
+            books[book_name1]["total"] += 1
+        else:
+            category=input("kitabin kategorisini girin :")
+            total=int(input("kitap adedini girin :"))
+            books[book_name1] = {"name": book_name1, "total": total, "category": category}
+            print("guncel kitap listesi :", books)
+
+    elif vote=="2":
+        book_name2=input("cikarmak istedgin kitap : ")
+        if book_name2 in books:
+            books[book_name2]["total"]-=1
+        else:
+            category=input("kitabin kategorisini girin :")
+            total=input("kitap adedini girin :")
+
+
+
+        
+
+            
+
+           
+    
+    
     
