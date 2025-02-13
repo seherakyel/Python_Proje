@@ -1,14 +1,11 @@
 
-
-book1={"name":"1984","total":5,"category":"political"}
-book2={"name":"Fareler ve Insanlar","total":2,"category":"tragedy"}
-book3={"name":"Seker Portakali","total":0,"category":"fiction"}
-
 books = {
-    "book1": book1,
-    "book2": book2,
-    "book3": book3
+    "book1": {"name": "1984", "total": 5, "category": "political"},
+    "book2": {"name": "Fareler ve Insanlar", "total": 2, "category": "tragedy"},
+    "book3": {"name": "Seker Portakali", "total": 0, "category": "fiction"},
+    "book4": {"name": "Kurk Mantolu Madonna", "total": 3, "category": "romance"},
 }
+
 
 while True:
     print("1:kitap ekle veya arttir")
@@ -32,19 +29,30 @@ while True:
         book_name2=input("cikarmak istedigin kitap adini girin : ")
         book_total=int(input("cikarmak istedigin kitap adedi girin : "))
         category=input("kitabin kategorisini girin :")
-        if book_name2 in books and total>book_total:
-            books[book_name2]["total"]-=book_total 
+
+        book_key = None  
+        for i in books:  
+            if books[i]["name"] == book_name2:  
+                book_key = i
+                break  
+
+        if book_key in books and books[book_key]["total"] > book_total:
+            books[book_key]["total"]-=book_total 
             print("guncel kitap listesi :", books)
 
         else:
-            print("cikarmak istedigin kitap zaten yok ")
+            print("cikarmak istedigin kitap zaten yok ")
 
-
-        
-
-            
-
-           
+    elif vote=="3":
+        print("kitap listesi :", books)
     
-    
-    
+    elif vote=="4":
+        book_name3=input("aramak istediginiz kitabin adini girin :")
+        for i in books:
+            if books[i]["name"] == book_name3:
+                print("kitap adi :", books[i]["name"])
+                print("kitap adedi :", books[i]["total"])
+                print("kitap kategorisi :", books[i]["category"])
+                break
+        else:
+            print("kitap bulunamadi")
